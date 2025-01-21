@@ -1,7 +1,7 @@
 """ Create initialConfigurationFile based on input from initStateHelper.py """
 
 import numpy as np
-from numpy import * # just so users don't have to type 'np.'
+from numpy import pi, sin, cos, tan, arcsin, asin, arccos, acos, arctan, atan, hypot, arctan2, atan2, degrees, radians, deg2rad, rad2deg, sinh, cosh, tanh, arcsinh, asinh, arccosh, acosh, arctanh, atanh, round, around, rint, fix, floor, ceil, trunc, nanprod, nansum, cumulative_sum, cumulative_prod, cumprod, cumsum, nancumprod, nancumsum, diff, ediff1d, gradient, cross, trapezoid, exp, expm1, exp2, log, log10, log2, log1p, logaddexp, logaddexp2, i0, sinc, signbit, copysign, frexp, ldexp, nextafter, spacing, lcm, gcd, add, reciprocal, positive, negative, multiply, divide, power, subtract, true_divide, floor_divide, fmod, mod, modf, remainder, divmod, angle, real, imag, conj, conjugate, maximum, amax, fmax, nanmax, minimum, amin, fmin, nanmin, convolve, clip, sqrt, cbrt, square, absolute, fabs, sign, heaviside, nan_to_num, real_if_close, interp, bitwise_count  # Almost all of NumPy's mathematical functions from https://numpy.org/doc/stable/reference/routines.math.html, just so users don't have to type 'np.' Exclude `min`, `max,` sum`, `pow`, to avoid collision with Python built-in functions.
 
 def director_component_array_from_function_string(
     function_string, Lx, Ly, Lz
